@@ -13,10 +13,32 @@
 <body>
     <div class="container">
         <div class="heading">
-            <p class="main-heading">Heading here</p>
+            <p class="main-heading">Heading here - Page drawn by Manor</p>
             <p class="sub-heading">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                 tempor.</p>
         </div>
+        <section class="error error-fw"> 
+            <p>Heading should come inside a section called header. Refer to the html tag called header. While
+                users can use divs everywhere, html5 came up with semantic elements for common components found in every web page i.e - header, footer, sidenav, etc.
+                It is today's practice to devide webpages into these semantic elements (sections) and add the dynamic content in a tag called main. This
+                is to aid screen-readers read webpages for those with vision disabilities. While making webpages fully accessible for all users always requires extra efforts
+                it is good to adopt basic practices of accessibility from the beginning. HTML is a mark up language not a programming language. While logically it makes screen-readersto use 
+                divs everywhere, divs are heavy elements and does not give screen readers any information about the content inside the divs. Understand the semantic purpose
+                behind every tag and use the tag to display contents based on the purpose of the contents.
+            </p>
+            <p> For ex - p tag is for paragraphs not for headings. Always use h1-h8 elements to set the headings
+                in pages, sections, etc. Follow the heirarchy of h1-h8 elements as specified in w3 org documentation.</p>
+            <p>When writing html code write it as you would use a mark up language, not programming language.
+                Identify the structure of a webpage and divide them in your mind while writing code for it. Understand the layout, spaces, paddings, margins
+                and write the code in an organizational manner rather than simply writing code to get the end result.
+            </p>
+            <p>Headings should never have properties such as width, grid-layout properties, height, etc. Headings give information to users about the content.
+                So they cannot be clipped. Additionally giving the right alignment properties becomes tricky when you use width or layout properties on headings.
+                Width of inner html elements should be determined by it's parent element so as to make pages properly responsive.
+                Hence the container which holds the headings will decide the width and accordingly adjust the child elements.
+            </p>
+        </section>
+        
         <div class="gallery">
             <img src="test.jpg" alt="test image" class="grid-item-1">
             <img src="test.jpg" alt="test image" class="grid-item-2">
@@ -27,6 +49,50 @@
             <img src="test.jpg" alt="test image" class="grid-item-7">
             <img src="test.jpg" alt="test image" class="grid-item-8">
         </div>
+    </div>
+
+    <div class="page-container">
+        <section class="error">
+            <p>In this section I proceeded with creating a container class and set an arbitrary width.
+            I used margin auto to align it at the center of the page. This is one of the commonly used
+            ways to align divs centrally i.e to set a width and use margin auto. </p>
+            <p>While I have set a width for this container, it is generally better that the containers be flexible and take spaces based on the screen size
+                for making pages responsive in a basic manner. To make pages responsive for all classes of devices (mobile, tablet, desktop) always takes extra effort
+                and testing. But it is good to add basic responsive properties to pages so that it supports at the very least small desktop screens.
+            </p>
+            <p>Setting widths for containers is appropriate for fixed elements such as sidenav, header, footer or containers of grids.</p>
+            <p>The container class you have created has a property of margin bottom. Spacings in html pages are of 2 types - paddings and margins. Paddings
+                are for alloting spaces inside an html element while margins are for alloting spaces between 2 html elements. The container you have created
+                is the outermost div of the page and should therefore contain padding instead of margin.
+            </p>
+            <p>Always reset default margins and paddings of body and html tags. If a page has padding it will most likely be in the dynamic content. Reset the spaces
+                to allow headers and footers to take the full width of the screen.
+            </p>
+            <p> Understand the structure of my html code and compare it with yours to better understand how you can improve your code.
+                As a front-end developer your job is to structure pages properly. While most aren't aware of this and don't care about this, while
+                making webpages it is recommended to follow the accessibility and responsive web page principles. These are the principles followed by third-party libraries as well.
+            </p>
+        </section>
+        <header class="page-header">
+            <h1 class="page-title">Heading here - Page drawn by Vinitra</h1>
+            <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                tempor.</h3>
+        </header>
+        <section class="gallery-grid">
+            <img src="test.jpg" alt="test image" class="item-1">
+            <img src="test.jpg" alt="test image" class="item-2">
+            <img src="test.jpg" alt="test image" class="item-3">
+            <img src="test.jpg" alt="test image" class="item-4">
+            <img src="test.jpg" alt="test image" class="item-5">
+            <img src="test.jpg" alt="test image" class="item-6">
+            <img src="test.jpg" alt="test image" class="item-7">
+            <img src="test.jpg" alt="test image" class="item-8">
+        </section>
+        <section>
+            <p>The above code is just another alternate to the method you have approached. Your solution is fine, it's a good
+                use of css-grid row and template properties. Using areas is just another alternate method.
+            </p>
+        </section>
     </div>
 </body>
 
